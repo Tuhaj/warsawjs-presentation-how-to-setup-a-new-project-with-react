@@ -81,13 +81,14 @@
     </section>
 
     <section class="slide compact">
-        <h2>Why React?</h2>
-        <ul>
-            <li>Where to pay attention?</li>
-            <li>What stack worked for me?</li>
-            <li>Benefits and risks of the chosen config</li>
-            <li>Main message (The Great Lesson Learned)</li>
-        </ul>
+        <h2>Why React from begining?</h2>
+        <figure>
+            <blockquote>
+                <p style="font-size: 32px">Interoperability</p>
+                <p>We place high value in interoperability with existing systems and gradual adoption. Facebook has a massive non-React codebase. </p>
+            </blockquote>
+            <figcaption><a href="https://facebook.github.io/react/contributing/design-principles.html">Design Principles</a></figcaption>
+        </figure>
     </section>
 
     <section class="slide">
@@ -125,13 +126,59 @@
     </section>
 
     <section class="slide">
+        <h2>What have we got in the initial config?</h2>
+        <ul>
+            <li class="next"><a href="https://github.com/webpack/webpack-dev-server">Hidden Webpack config in react-scripts</a></li>
+            <li class="next"><a href="https://facebook.github.io/jest/blog/2016/09/01/jest-15.html">Jest as testing library!</a></li>
+        </ul>
+    </section>
+
+    <section class="slide prism">
+        <h2>Example of a test written in Jest</h2>
+
+        <pre style="font-size: 28px;" class="language-javascript line-numbers">
+            <code>
+                import sum from './sum';
+
+                it('sums numbers', () => {
+                  expect(sum(1, 2)).toEqual(3);
+                  expect(sum(2, 2)).toEqual(4);
+                });
+            </code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>What is missing, but we hope to have in the future?</h2>
+        <ul>
+            <li class="next"><a href="https://github.com/gaearon/react-hot-loader">Hot Module Reloader</a></li>
+        </ul>
+    </section>
+
+    <section class="slide">
         <h2>Let's try this config!</h2>
         <ul>
             <li class="next"><a href="https://www.npmjs.com/package/eslint-config-airbnb">some rigorous eslint perset</a></li>
             <li class="next"><a href="https://www.styled-components.com/">styled-components</a></li>
             <li class="next"><a href="https://www.npmjs.com/package/deep-freeze">deep-freeze for testing immutability</a></li>
-            <li class="next"></li>
+            <li class="next"><a href="https://www.npmjs.com/package/lodash">lodash</a></li>
         </ul>
+    </section>
+
+    <section class="slide prism">
+        <h2>And let's add this to scripts in package.json</h2>
+
+        <pre style="font-size: 28px;" class="language-javascript line-numbers">
+            <code>
+              "scripts": {
+                ...
+                "lint": "eslint --ext=js --ext=jsx .",
+                "lint:fix": "eslint --ext=js --ext=jsx --fix .",
+                "test:unit": "react-scripts test --env=jsdom",
+                "test": "yarn run lint && yarn run test:unit"
+              },
+            </code>
+        </pre>
     </section>
 
     <section class="slide prism">
@@ -147,10 +194,20 @@
     </section>
 
     <section class="slide">
+        <h2>Caveats</h2>
+        <ul>
+            <li>When using styled components there is no ref but innerRef</li>
+            <li>Airbnb eslint perset won't allow you returning an assignment</li>
+            <li>async / await is supported, but does it give polyfills to the build?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
         <h2>Sources</h2>
         <ul>
             <li><a href="https://github.com/facebookincubator/create-react-app">Create React App</a></li>
             <li><a href="https://facebook.github.io/react/docs/thinking-in-react.html">Thinking in React</a></li>
+            <li><a href="https://facebook.github.io/react/contributing/design-principles.html">Design Principles</a></li>
             <li><a href="https://egghead.io/courses/build-your-first-production-quality-react-app">Build Your First Production Quality React App</a></li>
         </ul>
     </section>
