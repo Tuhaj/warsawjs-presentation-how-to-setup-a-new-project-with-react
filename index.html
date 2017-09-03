@@ -70,188 +70,88 @@
         <img style="width: 69%; position: relative; display: inline-block;" src="pictures/boxing.jpg" />
     </section>
 
-    <section class="slide compact">
-        <h2>Today morning...</h2>
-        <img class="image" src="pictures/tweet.png"/>
-    </section>
-
     <section class="slide">
-        <h2>This presentation plan</h2>
+        <h2>What's the plan?</h2>
         <ul>
-            <li>What is AWS Labmda?</li>
-            <li>How to implement it?</li>
-            <li>Evaluation of the tool</li>
+            <li>Where to pay attention?</li>
+            <li>What stack worked for me?</li>
+            <li>Benefits and risks of the chosen config</li>
+            <li>Main message (The Great Lesson Learned)</li>
         </ul>
     </section>
 
     <section class="slide compact">
-        <h2>What is an AWS Lambda?</h2>
+        <h2>Why React?</h2>
         <ul>
-            <li>code that can be run on your behalf using AWS infrastructure</li>
-            <li>written in supported language (Node.js, Java, and Python)</li>
-            <li>that can be used as:
-                <ul>
-                    <li>event-driven compute service where AWS Lambda runs your code in response to events</li>
-                    <li><mark>compute service to run your code in response to HTTP requests using Amazon API Gateway or API calls made using AWS SDKs.</mark></li>
-                </ul>
-            </li>
+            <li>Where to pay attention?</li>
+            <li>What stack worked for me?</li>
+            <li>Benefits and risks of the chosen config</li>
+            <li>Main message (The Great Lesson Learned)</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>How to start?</h2>
+        <h2>What is the most important quality of a software developer?</h2>
         <ul>
-            <li>Have an AWS account</li>
-            <li>Have an idea</li>
-            <li>Have some time to read the docs or just listen to this presentation ;-)</li>
-            <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">the docs are here (with turorial)</a></li>
+            <li class="next">Knowledge?</li>
+            <li class="next">Persistance?</li>
+            <li class="next">Communication skills?</li>
+            <li class="next">Constructive laziness?</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Other tutorials</h2>
-        <p>Here is a good one, but huge!</p>
-        <p><a href="https://github.com/dwyl/learn-aws-lambda">learn-aws-lambda</a></p>
-    </section>
-
-    <section class="slide">
-        <h2>How to start?</h2>
-        <ul>
-            <li>Have an AWS account</li>
-            <li>Have an idea</li>
-            <li>Have some time to read the docs or just listen to this presentation ;-)</li>
-        </ul>
-    </section>
-
-    <section class="slide prism">
-        <h2>Example lambda in Node.js</h2>
-
-        <pre style="font-size: 28px;" class="language-javascript line-numbers">
-            <code>
-            'use strict';
-            console.log('Loading event');
-
-            exports.handler = function(event, context) {
-              var hello = { "Hello":"World" }
-              // SUCCESS with message
-              context.done(null, hello);
-            };
-            </code>
-        </pre>
-    </section>
-
-    <section class="slide prism">
-        <h2>Another example with params</h2>
-
-        <pre style="font-size: 25px;" class="language-javascript line-numbers">
-            <code>
-                console.log('Loading event');
-
-                exports.myHandler = function(event, context, callback) {
-                    console.log("value1 = " + event.key1);
-                    console.log("value2 = " + event.key2);
-                    callback(null, "some success message");
-                    // or
-                    // callback("some error type");
-                })
-            </code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>What year do we have?</h2>
-        <h2 class="shout grow">Why?</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Let's follow this idea!</h2>
-        <ul>
-            <li>What is the year using in alterntive calendars? Eg. A.U.C. (Ab Urbe Condita), abbr. to Anno Urbis (AU) instead of post Christum natum abbr. to Anno Domini (AD)?</li>
-            <li>we can ask for year Ab WarsawJS Condita (WJS) with a parameter</li>
-        </ul>
-    </section>
-
-    <section class="slide compact">
-        <h2>Simple function with API Gateway (1/2)</h2>
-        <ul>
-            <li>Amazon Services > Lambda > Get started now</li>
-            <li>Configure function
-                <ul>
-                    <li>write the body of the function</li>
-                    <li>set the role</li>
-                    <li>create function</li>
-                    <li>test it</li>
-                    <li>remember the region where is is created!</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-    <section class="slide compact">
-        <h2>Simple function with API Gateway (2/2)</h2>
-        <ul>
-           <li>Setup gateway
-                <ul>
-                    <li>API Gateway</li>
-                    <li>get started -> create Gateway</li>
-                    <li>resources -> create GET resource</li>
-                    <li>test it</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Hold up! Live coding session!</h2>
-        <h2 class="shout grow">What can go wrong? ;-)</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Is coding like philosophy?</h2>
+        <h2>To me it is...</h2>
         <figure>
             <blockquote>
-                <p style="font-size: 32px">Philosophy is like trying to open a safe with a combination lock: each little adjustment of the dials seems to achieve nothing, only when everything is in place does the door open.</p>
+                <p style="font-size: 32px">The first quality that is needed is audacity.</p>
             </blockquote>
-            <figcaption>Ludwig Wittgenstein</figcaption>
+            <figcaption>Winston Churchill</figcaption>
         </figure>
     </section>
 
-    <section class="slide compact">
-        <h2>What might go wrong?</h2>
+    <section class="slide">
+        <h2>Good news!</h2>
+        <h2 class="shout grow">We can exercise it!</h2>
+    </section>
+
+    <section class="slide">
+        <h2>How to start with create-react-app?</h2>
         <ul>
-           <li>buckets confusion</li>
-           <li>POST requests get JSON</li>
-           <li>getting lost in the docs</li>
-           <li>setting the access policy wrong</li>
-           <li>be disappointed with the tests results</li>
+            <li>create-react-app warsawjs-app</li>
+            <li>cd warsawjs-app</li>
+            <li>npm start</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>What I was expecting to be different?</h2>
+        <h2>Let's try this config!</h2>
         <ul>
-           <li>easier management / usage of the AWS console</li>
-           <li><a href="http://stackoverflow.com/questions/38610223/zip-with-amazon-lambda-why-is-it-slow">why Amazon lambda is slow</a>- my question on SO</li>
-           <li>free support from the AWS team</li>
+            <li class="next"><a href="https://www.npmjs.com/package/eslint-config-airbnb">some rigorous eslint perset</a></li>
+            <li class="next"><a href="https://www.styled-components.com/">styled-components</a></li>
+            <li class="next"><a href="https://www.npmjs.com/package/deep-freeze">deep-freeze for testing immutability</a></li>
+            <li class="next"></li>
         </ul>
     </section>
 
-    <section class="slide">
-        <h2>Examples of using</h2>
-        <p>My case on production project<p>
-            <ul>
-               <li>creating a ZIP archive form files on Amazon S3 bucket and giving a link to the user</li>
-               <li>performance is important</li>
-               <li>simplicity and scalability is important</li>
-            </ul>
+    <section class="slide prism">
+        <h2>Shold all your components begin with this?</h2>
+
+        <pre style="font-size: 28px;" class="language-javascript line-numbers">
+            <code>
+                import React from 'react';
+                import PropTypes from 'prop-types';
+                import styled from 'styled-components';
+            </code>
+        </pre>
     </section>
 
     <section class="slide">
-        <h2>Strong sides of Amazon Lambda</h2>
+        <h2>Sources</h2>
         <ul>
-           <li>scalable</li>
-           <li>cheap - 1000 000 requests a month for free</li>
-           <li>independent</li>
+            <li><a href="https://github.com/facebookincubator/create-react-app">Create React App</a></li>
+            <li><a href="https://facebook.github.io/react/docs/thinking-in-react.html">Thinking in React</a></li>
+            <li><a href="https://egghead.io/courses/build-your-first-production-quality-react-app">Build Your First Production Quality React App</a></li>
         </ul>
     </section>
 
@@ -270,10 +170,9 @@
         <div>
             <h2>Presentations</h2>
             <ul>
-                <li>All: 77 (without invitations)</li>
-                <caption>This year:</caption>
-                <li>Polish: 22</li>
-                <li>English: 16</li>
+                <li>All presentations this year 30</li>
+                <li>Polish: 21</li>
+                <li>English: 9</li>
             </ul>
         </div>
     </section>
@@ -282,7 +181,7 @@
         <div>
             <h2>Meetup</h2>
             <ul>
-                <li>Members: 1527 (+ 686)</li>
+                <li>Members: 2613 (+ 1 086 last year)</li>
             </ul>
         </div>
     </section>
@@ -291,8 +190,9 @@
         <div>
             <h2>Social Networks</h2>
             <ul>
-                <li>Facebook: likes 1090</li>
-                <li>Twitter: 283 followers</li>
+                <li>Facebook: likes 1687</li>
+                <li>Twitter: 417 followers</li>
+                <li>YouTube: 979 subscribers</li>
             </ul>
         </div>
     </section>
@@ -301,10 +201,11 @@
         <div>
             <h2>YouTube</h2>
             <ul>
-                <li>Subscribed: 544 (356)</li>
-                <li>Viewed: 31 642 (+ 310% )</li>
-                <li>Hands up: +318</li>
-                <li>Shares: 129</li>
+                <li>Subscribed: 979</li>
+                <li>Views: +39000</li>
+                <li>Hands up: +466</li>
+                <li>Shares: +189</li>
+                <li>Subscribers: +445</li>
             </ul>
         </div>
     </section>
@@ -312,16 +213,13 @@
     <section class="slide" alt='stats slide'>
         <div>
             <h2>Most popular talks this year!</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=7OK4i9HkXBQ">Mariusz Lichota: Aplikacja backendowa w Node.js z bazą danych Oracle [PL] - WarsawJS #15</a></li>
-                <li><a href="https://www.youtube.com/watch?v=2lX4-QVkNoI">Tomasz Netczuk: React Native, natywna aplikacja mobilna w JS [PL] - 2015-12-16 - WarsawJS #16</a></li>
-            </ul>
+            <div><a href="https://www.youtube.com/watch?v=-WDh7l58TVg">Martyna Nowocień: React na start - informacje w pigułce dla zainteresowanych ReactJS [PL] - WarsawJS #31</a></div>
         </div>
     </section>
 
     <section class="slide" alt='stats slide'>
         <div>
-            <h2>This year organizers</h2>
+            <h2>Organizers</h2>
             <ul>
                 <li class="next">Piotr Kowalski</li>
                 <li class="next">Piotr Zientara</li>
