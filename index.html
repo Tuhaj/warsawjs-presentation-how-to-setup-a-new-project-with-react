@@ -116,6 +116,16 @@
         <h2 class="shout grow">We can exercise it!</h2>
     </section>
 
+
+    <section class="slide">
+        <h2>Project Assumptions</h2>
+        <ul>
+            <li>make it progressive</li>
+            <li>support for modern browsers and IE11</li>
+            <li>we should be able to move components between projects</li>
+        </ul>
+    </section>
+
     <section class="slide">
         <h2>How to start with create-react-app?</h2>
         <ul>
@@ -130,7 +140,14 @@
         <ul>
             <li class="next"><a href="https://github.com/webpack/webpack-dev-server">Hidden Webpack config in react-scripts</a></li>
             <li class="next"><a href="https://facebook.github.io/jest/blog/2016/09/01/jest-15.html">Jest as testing library!</a></li>
+            <li class="next">Support for PWA<a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#making-a-progressive-web-app"></a></li>
         </ul>
+    </section>
+
+    <section class="slide compact">
+        <h2>Not everyone likes this idea</h2>
+        <a href="https://github.com/facebookincubator/create-react-app/issues/2398"><img src="pictures/pwa.png" />
+        </a>
     </section>
 
     <section class="slide prism">
@@ -159,9 +176,10 @@
         <h2>Let's try this config!</h2>
         <ul>
             <li class="next"><a href="https://www.npmjs.com/package/eslint-config-airbnb">some rigorous eslint perset</a></li>
-            <li class="next"><a href="https://www.styled-components.com/">styled-components</a></li>
+            <li class="next"><a href="https://www.styled-components.com/">styled-components</a> - no need to eject to add something like PostCSS</li>
             <li class="next"><a href="https://www.npmjs.com/package/deep-freeze">deep-freeze for testing immutability</a></li>
             <li class="next"><a href="https://www.npmjs.com/package/lodash">lodash</a></li>
+            <li class="next">No generators. If you like them use e.g. <a href="https://github.com/react-boilerplate/react-boilerplate">react-boilerplate</a></li>
         </ul>
     </section>
 
@@ -188,7 +206,7 @@
     </section>
 
     <section class="slide prism">
-        <h2>Shold all your components begin with this?</h2>
+        <h2>Should all your components begin with this?</h2>
 
         <pre style="font-size: 28px;" class="language-javascript line-numbers">
             <code>
@@ -197,6 +215,11 @@
                 import styled from 'styled-components';
             </code>
         </pre>
+    </section>
+
+    <section class="slide compact">
+        <h2>Import cost?</h2>
+        <img style="margin-top: 100px" src="pictures/import_cost.png" />
     </section>
 
     <section class="slide">
