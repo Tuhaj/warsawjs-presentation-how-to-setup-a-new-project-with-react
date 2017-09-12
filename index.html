@@ -299,6 +299,7 @@
             <li><a href="https://github.com/react-boilerplate/react-boilerplate">React Boilerplate</a> - 30 dependencies</li>
             <li><a href="https://github.com/kriasoft/react-starter-kit">React Starter Kit</a> - 28 dependencies</li>
             <li><a href="https://github.com/StephenGrider/ReduxSimpleStarter">Redux Simple Starter</a> - 12 dependencies</li>
+            <li><a href="https://github.com/mozilla-neutrino/neutrino-dev">Neutrino</a> - 0 dependencies</li>
         </ul>
     </section>
 
@@ -306,9 +307,10 @@
         <h2>True dependecies comparison (after eject)</h2>
         <ul>
             <li><a href="https://github.com/facebookincubator/create-react-app">Create React App</a> - 37 dependencies</li>
-            <li><a href="https://github.com/react-boilerplate/react-boilerplate">React Boilerplate</a> - 30 dependencies</li>
             <li><a href="https://github.com/kriasoft/react-starter-kit">React Starter Kit</a>  - 28 dependencies</li>
+            <li><a href="https://github.com/react-boilerplate/react-boilerplate">React Boilerplate</a> - 30 dependencies</li>
             <li><a href="https://github.com/StephenGrider/ReduxSimpleStarter">Redux Simple Starter</a> - 12 dependencies</li>
+            <li><a href="https://github.com/mozilla-neutrino/neutrino-dev">Neutrino</a> - 0 dependencies</li>
         </ul>
     </section>
 
@@ -332,14 +334,6 @@
                 <td>34 117</td>
             </tr>
             <tr>
-                <th scope="row"><a href="https://github.com/react-boilerplate/react-boilerplate">React Boilerplate</a></th>
-                <td>30</td>
-                <td>207</td>
-                <td>1277</td>
-                <td>161</td>
-                <td>15 236</td>
-            </tr>
-            <tr>
                 <th scope="row"><a href="https://github.com/kriasoft/react-starter-kit">React Starter Kit</a></th>
                 <td>28</td>
                 <td>348</td>
@@ -348,12 +342,28 @@
                 <td>15 335</td>
             </tr>
             <tr>
+                <th scope="row"><a href="https://github.com/react-boilerplate/react-boilerplate">React Boilerplate</a></th>
+                <td>30</td>
+                <td>207</td>
+                <td>1277</td>
+                <td>161</td>
+                <td>15 236</td>
+            </tr>
+            <tr>
                 <th scope="row"><a href="https://github.com/StephenGrider/ReduxSimpleStarter">Redux Simple Starter</a></th>
                 <td>12</td>
                 <td>55</td>
                 <td>54</td>
                 <td>5</td>
                 <td>1 971</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://github.com/mozilla-neutrino/neutrino-dev">Neutrino</a></th>
+                <td>24</td>
+                <td>23</td>
+                <td>376</td>
+                <td>31</td>
+                <td>1742</td>
             </tr>
         </table>
     </section>
@@ -370,10 +380,18 @@
             </tr>
             <tr>
                 <th scope="row"><a href="https://github.com/facebookincubator/create-react-app">Create React App</a></th>
-                <td>undefined</td>
+                <td>none</td>
                 <td><a href="https://www.npmjs.com/package/rx-lite">RxJS Lite</a></td>
                 <td>Jest</td>
                 <td>PWA</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://github.com/kriasoft/react-starter-kit">React Starter Kit</a></th>
+                <td>none</td>
+                <!-- RSK does not contain a Flux implementation -->
+                <td>none</td>
+                <td>Enzyme + Jest + Sinon</td>
+                <td><a href="https://github.com/kriasoft/react-starter-kit#comparison">Universal App</a>, SSR</td>
             </tr>
             <tr>
                 <th scope="row"><a href="https://github.com/react-boilerplate/react-boilerplate">React Boilerplate</a></th>
@@ -383,19 +401,48 @@
                 <td>Generators</td>
             </tr>
             <tr>
+                <th scope="row"><a href="https://github.com/StephenGrider/ReduxSimpleStarter">Redux Simple&nbsp;Starter</a></th>
+                <td>Redux</td>
+                <td>none</td>
+                <td>Mocha + Chai</td>
+                <td>Tutorial</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://github.com/mozilla-neutrino/neutrino-dev">Neutrino</a></th>
+                <td>presets</td>
+                <td>presets</td>
+                <td>presets</td>
+                <td>presets</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="slide compact">
+        <h2>Libraries comparison</h2>
+        <table class="striped">
+            <tr>
+                <th scope="col">Boilerplate</th>
+                <th>Licence Type</th>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://github.com/facebookincubator/create-react-app">Create React App</a></th>
+                <td>BSD 3-clause</td>
+            </tr>
+            <tr>
                 <th scope="row"><a href="https://github.com/kriasoft/react-starter-kit">React Starter Kit</a></th>
-                <td>undefined</td>
-                <!-- RSK does not contain a Flux implementation -->
-                <td>undefined</td>
-                <td>Enzyme + Jest + Sinon</td>
-                <td><a href="https://github.com/kriasoft/react-starter-kit#comparison">Universal App</a>, SSR</td>
+                <td>MIT</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://github.com/react-boilerplate/react-boilerplate">React Boilerplate</a></th>
+                <td>MIT</td>
             </tr>
             <tr>
                 <th scope="row"><a href="https://github.com/StephenGrider/ReduxSimpleStarter">Redux Simple&nbsp;Starter</a></th>
-                <td>Redux</td>
-                <td>undefined</td>
-                <td>Mocha + Chai</td>
-                <td>Tutorial</td>
+                <td>MIT</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://github.com/mozilla-neutrino/neutrino-dev">Neutrino</a></th>
+                <td>MPL-2.0</td>
             </tr>
         </table>
     </section>
