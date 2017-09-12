@@ -81,7 +81,7 @@
     </section>
 
     <section class="slide compact">
-        <h2>Why React from begining?</h2>
+        <h2>Why React App from scratch?</h2>
         <figure>
             <blockquote>
                 <p style="font-size: 32px">Interoperability</p>
@@ -120,7 +120,9 @@
     <section class="slide">
         <h2>Project Assumptions</h2>
         <ul>
-            <li>make it progressive</li>
+            <li>simple app with that is a form wizard</li>
+            <li>separate forntend and backend</li>
+            <li>make it in a progressive way, fast and modern</li>
             <li>support for modern browsers and IE11</li>
             <li>we should be able to move components between projects easily</li>
         </ul>
@@ -140,8 +142,8 @@
         <ul>
             <li class="next"><a href="https://github.com/webpack/webpack-dev-server">Hidden Webpack config in react-scripts</a></li>
             <li class="next"><a href="https://facebook.github.io/jest/blog/2016/09/01/jest-15.html">Jest as testing library with autorun!</a></li>
-            <li class="next"><a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#making-a-progressive-web-app">Support for PWA</a></li>
             <li class="next"><a href="https://github.com/facebookincubator/create-react-app#philosophy">No Configuration Required</a></li>
+            <li class="next"><a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#making-a-progressive-web-app">Support for PWA</a></li>
         </ul>
     </section>
 
@@ -149,6 +151,23 @@
         <h2>Not everyone likes this idea</h2>
         <a href="https://github.com/facebookincubator/create-react-app/issues/2398"><img src="pictures/pwa.png" />
         </a>
+    </section>
+
+    <section class="slide">
+        <h2>Let's make a jump! What is the hardest problem in Computer Science?</h2>
+        <ul>
+            <li class="next">cache invalidation?</li>
+            <li class="next">Naming?</li>
+            <li class="next">off-by-1 errors?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Complexity management!</h2>
+        <figure>
+            But that is obvious, as the definition of hard is also "complex".
+            And it more generic, doesn't limit to Computer Science!
+        </figure>
     </section>
 
     <section class="slide prism">
@@ -168,9 +187,7 @@
 
     <section class="slide">
         <h2>What is missing, but we hope to have in the future?</h2>
-        <ul>
-            <li class="next"><a href="https://github.com/gaearon/react-hot-loader">Hot Module Reloader</a></li>
-        </ul>
+        <h2 class="next grow shout"><a href="https://github.com/gaearon/react-hot-loader">Hot Module Reloader</a></h2>
     </section>
 
     <section class="slide">
@@ -181,14 +198,13 @@
             <li class="next"><a href="https://www.npmjs.com/package/deep-freeze">deep-freeze for testing immutability</a></li>
             <li class="next"><a href="https://www.npmjs.com/package/lodash">lodash</a></li>
             <li class="next">No generators. If you like them use e.g. <a href="https://github.com/react-boilerplate/react-boilerplate">react-boilerplate</a></li>
+          <li class="next">Debugger: <a href="https://github.com/zalmoxisus/redux-devtools-extension">Redux Devtools Extension!</a></li>
         </ul>
     </section>
 
-    <section class="slide prism">
-        <h2>Generators like in react-boilerplate?</h2>
-        <ul>
-            <li>Depends on type of the editor you use...</li>
-        </ul>
+    <section class="slide">
+        <h2>And the package manager?</h2>
+        <h2 style="text-align: center; margin-top: 10rem">yarn vs npm</h2>
     </section>
 
     <section class="slide">
@@ -214,13 +230,17 @@
     </section>
 
     <section class="slide prism">
-        <h2>Should all your components begin with this?</h2>
-
+        <h2>Requests</h2>
+        <a href="">Using axios</a>
         <pre style="font-size: 28px;" class="language-javascript line-numbers">
             <code>
-                import React from 'react';
-                import PropTypes from 'prop-types';
-                import styled from 'styled-components';
+                const config = {
+                  baseURL: process.env.API_URL || 'http://localhost:8000/api/v1/',
+                  headers: {
+                    'content-type': 'application/json',
+                  },
+                };
+                const request = axios.create(config);
             </code>
         </pre>
     </section>
@@ -240,6 +260,11 @@
             <li>dev server lint might be redundant</li>
             <li>in this config Autoprefixed CSS are redundant</li>
         </ul>
+    </section>
+
+    <section class="slide">
+        <h2>And eject was finally needed...</h2>
+        <a href="https://www.styled-components.com/docs/tooling#babel-plugin">When applying tooling for styled-components</a>
     </section>
 
     <section class="slide">
@@ -384,6 +409,7 @@
             <li><a href="https://github.com/kriasoft/react-starter-kit#comparison">React Starter Kit Boilerplates Comparison</a></li>
             <li><a href="https://egghead.io/courses/build-your-first-production-quality-react-app">Build Your First Production Quality React App</a></li>
             <li><a href="https://www.udemy.com/react-redux/">Modern React with Redux</a></li>
+            <li><a href="https://www.youtube.com/watch?v=xsSnOQynTHs">Dan Abramov - Live React: Hot Reloading with Time Travel</a></li>
         </ul>
     </section>
 
