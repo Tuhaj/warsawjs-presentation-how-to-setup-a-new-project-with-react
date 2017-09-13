@@ -11,7 +11,7 @@
 
 .slide.front-page .details {
     float: left;
-    width: calc(100% - 440px);
+    width: calc(100% - 500px);
     border-left: 3px solid #f7302f;
     padding: 0 0 10px 50px;
     margin-top: 5px;
